@@ -1,0 +1,39 @@
+import React from 'react';
+import { Container, Grid, Paper, Typography, Button } from '@mui/material';
+
+const Content = () => {
+  const projects = [
+    {
+      title: 'Project One',
+      description: 'A short description of the project.',
+      link: 'https://github.com/your-repo/project-one',
+    },
+    {
+      title: 'Project Two',
+      description: 'A short description of the project.',
+      link: 'https://github.com/your-repo/project-two',
+    },
+    // Add more projects here
+  ];
+
+  return (
+    <Container>
+      <Typography variant="h4" gutterBottom>My Work</Typography>
+      <Grid container spacing={3}>
+        {projects.map((project, index) => (
+          <Grid item xs={12} sm={6} key={index}>
+            <Paper sx={{ padding: 2 }}>
+              <Typography variant="h6">{project.title}</Typography>
+              <Typography>{project.description}</Typography>
+              <Button variant="contained" href={project.link} target="_blank">
+                View Project
+              </Button>
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
+};
+
+export default Content;
