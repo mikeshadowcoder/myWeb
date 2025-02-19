@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Paper, Typography, Button } from '@mui/material';
+import { Container, Grid2, Paper, Typography, Button } from '@mui/material';
 
 const Content = () => {
   const projects = [
@@ -19,9 +19,9 @@ const Content = () => {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>My Work</Typography>
-      <Grid container spacing={3}>
+      <Grid2 container spacing={3}>
         {projects.map((project, index) => (
-          <Grid item xs={12} sm={6} key={index}>
+          <Grid2 item xs={12} sm={6} key={index}>
             <Paper sx={{ padding: 2 }}>
               <Typography variant="h6">{project.title}</Typography>
               <Typography>{project.description}</Typography>
@@ -29,9 +29,9 @@ const Content = () => {
                 View Project
               </Button>
             </Paper>
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Container>
   );
 };
