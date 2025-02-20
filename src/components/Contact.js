@@ -1,7 +1,39 @@
-import React from 'react';
-import { Container, Typography, TextField, Button, Box } from '@mui/material';
+import React, { useState } from 'react';
+import { Container, Typography, TextField, Button, Box, Alert } from '@mui/material';
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false); 
+  const [error, setError] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setError(false);
+    setSuccess(false);
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch("https://formsubmit.co/bufferingupbruh1994@gmail.com", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        event.target.reset(); // Reset the form after success
+        setTimeout(() => setSuccess(false), 5000);
+      } else {
+        setError(true);
+        setTimeout(() => setError(false), 5000);
+
+      }
+    } catch (err) {
+      setError(true);
+      setTimeout(() => setError(false), 5000);
+    }
+  }
+
+
   return (
     <Box
     sx={{ 
@@ -17,7 +49,10 @@ const Contact = () => {
       <Container>
         <Typography variant="h4" gutterBottom>Contact Me</Typography>
 
-        <form action="https://formsubmit.co/bufferingupbruh1994@gmail.com" method="POST">
+        {/* Success Message */}
+        {success && <Alert severity="success">Message sent</Alert>}
+        {error && <Alert severity="error">Failed to send message. Please try again.</Alert>}
+        <form onSubmit={handleSubmit}>
 
           <input type="hidden" name="_captcha" value="false" />
 

@@ -6,6 +6,8 @@ import AboutMe from './components/AboutMe';
 import Content from './components/Content';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Needed for modal functionality
 
 
 const App = () => {
