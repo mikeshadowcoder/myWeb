@@ -6,7 +6,7 @@ const Skills = () => {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>Skills</Typography>
+      <Typography variant="h4" gutterBottom>Skills/Tech Stack</Typography>
       <Grid container spacing={2}>
         {skills.map((skill, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
