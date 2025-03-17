@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 const Header = ({onScrollToSection}) => {
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" elevation={0} sx={{ backgroundColor: "#051323", color: "ffffff" }}>
       <Toolbar>
         <Typography variant="h6" sx={{flexGrow:1}}>
           Christian Rex Omongos

@@ -4,7 +4,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 // import FacebookIcon from "@mui/icons-material/Facebook";
 import profilePic from "../assets/images/profilePic.jpg";
-// import { LinkedIn, GitHub, Facebook } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -44,21 +43,21 @@ const Home = () => {
 
       {/* Text Section */}
       <Box sx={{ textAlign: "left"}}>
-        <Typography variant="h3">
-          Hi! I'm{" "} 
-          <Typography variant="h3" component="span" sx={{ color: "#2196F3", fontWeight: "bold" }}>Christian Rex Omongos</Typography>
+        <Typography variant="h2">
+          My name's {" "}
+          <Typography variant="h2" component="span" sx={{ color: "#2196F3", fontWeight: "bold" }}>Christian Rex Omongos</Typography>
         </Typography>
 
-        <Typography variant="h6" sx={{ marginTop: "10px", opacity: 0.8 }}>
-          Web Developer | Virtual Assistant
+        <Typography variant="h6" sx={{ marginBottom: "10px", opacity: 0.8 }}>
+          Web Developer
         </Typography>
 
         {/* Social Media Icons */}
         <Box sx={{ display: "flex",}}>
-          <Button href="https://linkedin.com/in/christianrex/" target="_blank" sx={{ color: "white" }}>
+          <Button href="https://linkedin.com/in/christianrex/" target="_blank" sx={{ color: "white", minWidth: 0, padding: 0 }}>
             <LinkedInIcon fontSize="large" />
           </Button>
-          <Button href="https://github.com" target="_blank" sx={{ color: "white" }}>
+          <Button href="https://github.com/mikeshadowcoder" target="_blank" sx={{ color: "white", minWidth: 0, padding: 0 }}>
             <GitHubIcon fontSize="large" />
           </Button>
         </Box>
