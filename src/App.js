@@ -19,7 +19,7 @@ const App = () => {
 
   // Function to handle smooth scrolling
   const scrollToSection = (ref) => {
-    const headerOffset = 64; // Adjust based on your AppBar height (default MUI AppBar is ~64px)
+    const headerOffset = 200; // Adjust based on your AppBar height (default MUI AppBar is ~64px)
     const elementPosition = ref.current.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = elementPosition - headerOffset;
   
