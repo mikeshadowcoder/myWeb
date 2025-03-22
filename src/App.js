@@ -65,18 +65,6 @@ const App = () => {
       </section>
     </div>
   );
-  // return (
-  //   <Router>
-  //     <Header />
-  //     <Routes>
-  //       <Route path="/" element={<AboutMe />}/>
-  //       <Route path="/about" element={<AboutMe />} />
-  //       <Route path="/content" element={<Content />} />
-  //       <Route path="/skills" element={<Skills />} />
-  //       <Route path="/contact" element={<Contact />} />
-  //     </Routes>
-  //   </Router>
-  // );
 };
 
 export default App;

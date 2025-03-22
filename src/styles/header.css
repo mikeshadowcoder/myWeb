@@ -1,0 +1,8 @@
+.header {
+  position: sticky;
+  background-color: #051323 !important;
+  color: #ffffff !important;
+  z-index: 1200 !important;
+  overflow: hidden;
+}
+
