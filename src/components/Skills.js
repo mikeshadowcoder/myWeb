@@ -1,22 +1,22 @@
 import React from 'react';
-import { Container, Grid, Paper, Typography } from '@mui/material';
+import { Grid2, Paper, Typography, Box } from '@mui/material';
 
 const Skills = () => {
   const skills = ['JavaScript', 'ReactJS', 'Node.js', 'HTML', 'CSS', 'MySQL'];
 
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>Skills/Tech Stack</Typography>
-      <Grid container spacing={2}>
+    <Box sx={{ mt: 25, width: "100%", }}>
+      <Typography variant="h4" gutterBottom >Skills/Tech Stack</Typography>
+      <Grid2 container spacing={2} >
         {skills.map((skill, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid2 item xs={12} sm={6} md={4} key={index}>
             <Paper sx={{ padding: 2, textAlign: 'center' }}>
               <Typography variant="h6">{skill}</Typography>
             </Paper>
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
-    </Container>
+      </Grid2>
+    </Box>
   );
 };
 

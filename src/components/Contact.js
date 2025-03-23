@@ -38,12 +38,12 @@ const Contact = () => {
     <Box
     sx={{ 
       backgroundColor: "#25233b", // Darker shade to contrast with the main background
-      padding: "2rem",
+      p: 4,
       borderRadius: "12px",
-      boxShadow: "0px 0px 15px rgba(0, 0, 255, 0.3)", // Adds a subtle glow effect
-      maxWidth: "89%",
-      margin: "auto",
-      mt: 4
+      boxShadow: "0px 0px 15px rgba(0, 170, 255, 0.4)", // Adds a subtle glow effect
+      width: "100%",
+      mt: 25,
+      mb: 10
     }}
     >
       <Container>

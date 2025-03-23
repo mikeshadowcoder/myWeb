@@ -12,9 +12,9 @@ const Home = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        // flexDirection: "column",
         minHeight: "100vh",
         color: "white",
+        width: "100%",
         textAlign: "center",
       }}
     >
@@ -29,7 +29,7 @@ const Home = () => {
       {/* Profile Image */}
       <Box
         component="img"
-        src={profilePic} // Replace with actual image URL
+        src={profilePic} //Profile Picture
         alt="Profile"
         sx={{
           width: "200px",

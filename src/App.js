@@ -6,8 +6,11 @@ import AboutMe from './components/AboutMe';
 import Content from './components/Content';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Box from '@mui/material/Box';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Needed for modal functionality
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 const App = () => {
@@ -42,7 +45,12 @@ const App = () => {
           contact: () => scrollToSection(contactRef),
         }}
       />
-
+      <Box sx={{
+        maxWidth: "89%",
+        margin: "auto",
+        // border: "2px solid red"
+      }}>
+      <SpeedInsights/>
        {/* Sections with attached refs */}
       <section ref={homeRef}>
         <Home />
@@ -63,6 +71,11 @@ const App = () => {
       <section ref={contactRef}>
         <Contact />
       </section>
+
+      <section>
+        <Footer/>        
+      </section>
+      </Box>
     </div>
   );
 };
