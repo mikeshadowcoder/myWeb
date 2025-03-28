@@ -6,7 +6,7 @@ const Skills = () => {
 
   return (
     <Box sx={{ mt: 25, width: "100%", }}>
-      <Typography variant="h4" gutterBottom >Skills/Tech Stack</Typography>
+      <Typography variant="h4" gutterBottom >Tech Stack</Typography>
       <Grid2 container spacing={2} >
         {skills.map((skill, index) => (
           <Grid2 item xs={12} sm={6} md={4} key={index}>

@@ -1,8 +1,9 @@
 .header {
   position: sticky;
-  background-color: #051323 !important;
+  background-color: rgba(5, 19, 35, .4) !important;
+  backdrop-filter: blur(80px);
   color: #ffffff !important;
-  z-index: 1200 !important;
+  /* z-index: 1200 !important; */
   overflow: hidden;
 }
 

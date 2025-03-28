@@ -8,9 +8,9 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Box from '@mui/material/Box';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Needed for modal functionality
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import BackgroundShapes from './components/BackgroundShapes'
+
 
 
 const App = () => {
@@ -36,6 +36,7 @@ const App = () => {
   return (
     <div>
       {/* Pass the scroll function to Header for navigation */}
+      <BackgroundShapes/>
       <Header
         onScrollToSection={{
           home: () => scrollToSection(homeRef),

@@ -8,10 +8,9 @@ const Footer = () => {
             sx={{ 
                 width: "100%",
                 color: "white", 
-                textAlign: "center", 
-                py: 3, 
+                textAlign: "center",  
                 mt: 4, 
-                mb: 3
+                mb: 2
             }}
         >
             <Typography variant="body2">

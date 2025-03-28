@@ -1,0 +1,82 @@
+.shapes-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(80px); /* Blure Effect */
+    z-index: -1; /* Keep shapes behind content */
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    box-shadow: 0 0 150px rgba(255, 255, 255, 0.2); /* Extra glow */
+    animation: moveSideways 6s infinite alternate ease-in-out;
+    filter: brightness(1.2);
+  }
+  
+  /* Different circles with unique positions, sizes, and colors */
+  .circle1 {
+    width: 25vw;
+    height: 25vw;
+    background: radial-gradient(circle, rgba(138, 43, 226, 1) 30%, rgba(138, 43, 226, 0) 80%);
+    /* background-color: radial-gradient(circle, rgba(138, 43, 226, 1) 30%, rgba(138, 43, 226, 0) 80%); */
+    box-shadow: 0 0 80px 40px rgba(138, 43, 226, 0.5); /* Light rays effect */
+    top: 10%;
+    left: 0%;
+    animation-duration: 2.5s;
+  }
+  
+  .circle2 {
+    width: 25vw;
+    height: 25vw;
+    background: radial-gradient(circle, rgba(186, 16, 205, 1) 30%, rgba(186, 16, 205, 0) 80%);
+    /* background-color: rgba(186, 16, 205, 0.6); */
+    top: 40%;
+    left: 60%;
+    animation-duration: 3.5s;
+  }
+  
+  .circle3 {
+    width: 25vw;
+    height: 25vw;
+    background: radial-gradient(circle, rgba(93, 236, 229, 1) 30%, rgba(93, 236, 229, 0) 80%);
+    /* background-color: rgba(93, 236, 229, 0.6); */
+    top: 50%;
+    left: 10%;
+    animation-duration: 3s;
+  }
+  
+  .circle4 {
+    width: 25vw;
+    height: 25vw;
+    background: radial-gradient(circle, rgba(43, 123, 252, 1) 30%, rgba(43, 123, 252, 0) 80%);
+    /* background-color: rgba(43, 123, 252, 0.6); */
+    top: 15%;
+    left: 40%;
+    animation-duration: 2.5s;
+  }
+  
+  .circle5 {
+    width: 25vw;
+    height: 25vw;
+    background: radial-gradient(circle, rgba(191, 64, 191, 1) 30%, rgba(191, 64, 191, 0) 80%);
+    /* background-color: rgba(191, 64, 191, 0.6); */
+    top: 90%;
+    left: 10%;
+    animation-duration: 3.5s;
+  }
+  
+  /* Smooth left-right movement */
+  @keyframes moveSideways {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px); /* Moves smoothly to the right */
+    }
+  }
+  
