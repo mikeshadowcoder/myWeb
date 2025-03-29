@@ -8,7 +8,7 @@ const Header = ({onScrollToSection}) => {
     <AppBar className="header">
       <Toolbar>
         <Typography variant="h6" sx={{flexGrow:1}}>
-          Christian Rex Omongos
+          Christian Rex
         </Typography>
         <Button color="inherit" onClick={onScrollToSection.home}>Home</Button>
         <Button color="inherit" onClick={onScrollToSection.about}>About</Button>

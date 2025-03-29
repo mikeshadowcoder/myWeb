@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Grid2, Paper, Typography, Button, Box } from '@mui/material';
 import MacWindowHeader from './UI/MacWindowHeader';
+import "../styles/boxStyling.css";
 
 const Content = () => {
   const projects = [
@@ -18,7 +19,7 @@ const Content = () => {
   ];
 
   return (
-  <Box
+  <Box className="box-container"
       sx={{
         width: "100%",
         margin: "auto",
@@ -28,7 +29,6 @@ const Content = () => {
         overflow: "hidden",
       }}
   >
-    {}
     <MacWindowHeader/>
     <Box sx={{ padding: "20px"}}>
       <Container>

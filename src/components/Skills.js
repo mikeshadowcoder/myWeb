@@ -1,11 +1,12 @@
 import React from 'react';
 import { Grid2, Paper, Typography, Box } from '@mui/material';
+import "../styles/boxStyling.css"
 
 const Skills = () => {
   const skills = ['JavaScript', 'ReactJS', 'Node.js', 'HTML', 'CSS', 'MySQL'];
 
   return (
-    <Box sx={{ mt: 25, width: "100%", }}>
+    <Box className="box-container" sx={{ mt: 25, width: "100%", }}>
       <Typography variant="h4" gutterBottom >Tech Stack</Typography>
       <Grid2 container spacing={2} >
         {skills.map((skill, index) => (
