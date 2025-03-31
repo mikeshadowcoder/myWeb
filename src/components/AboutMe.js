@@ -9,7 +9,7 @@ const AboutMe = () => {
       {/* <Paper sx={{ width: "100%", padding: 2, }}> */}
         <Typography variant="h4" gutterBottom>About Me</Typography>
           <Typography>
-            I'm a full-stack developer with experience in ReactJS, Node.js, and more.
+            I'm a web developer with verious experience in front-end and back-end development.
             My goal is to build impactful web applications and provide solutions that
             help businesses grow.
           </Typography>

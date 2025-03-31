@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Box, Alert } from '@mui/material';
+import "../styles/boxStyling.css"
 
 const Contact = () => {
   const [success, setSuccess] = useState(false); 
@@ -35,13 +36,9 @@ const Contact = () => {
 
 
   return (
-    <Box
+    <Box className="box-container"
     sx={{ 
-      backgroundColor: "#25233b", // Darker shade to contrast with the main background
       p: 4,
-      borderRadius: "12px",
-      boxShadow: "0px 0px 15px rgba(0, 170, 255, 0.4)", // Adds a subtle glow effect
-      width: "100%",
       mt: 25,
       mb: 10
     }}

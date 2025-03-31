@@ -12,7 +12,6 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import BackgroundShapes from './components/BackgroundShapes'
 
 
-
 const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -72,11 +71,10 @@ const App = () => {
       <section ref={contactRef}>
         <Contact />
       </section>
-
+      </Box>
       <section>
         <Footer/>        
-      </section>
-      </Box>
+      </section> 
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid2, Paper, Typography, Button, Box } from '@mui/material';
-import MacWindowHeader from './UI/MacWindowHeader';
+// import MacWindowHeader from './UI/MacWindowHeader';
 import "../styles/boxStyling.css";
 
 const Content = () => {
@@ -19,17 +19,8 @@ const Content = () => {
   ];
 
   return (
-  <Box className="box-container"
-      sx={{
-        width: "100%",
-        margin: "auto",
-        backgroundColor: "white",
-        borderRadius: "10px",
-        boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-        overflow: "hidden",
-      }}
-  >
-    <MacWindowHeader/>
+  <Box className="box-container">
+    {/* <MacWindowHeader/> */}
     <Box sx={{ padding: "20px"}}>
       <Container>
         <Typography variant="h4" gutterBottom>Projects</Typography>

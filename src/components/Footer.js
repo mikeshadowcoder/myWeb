@@ -10,11 +10,13 @@ const Footer = () => {
                 color: "white", 
                 textAlign: "center",  
                 mt: 4, 
-                mb: 2
+                mb: 2,
+                borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+                pt: 2,
             }}
         >
-            <Typography variant="body2">
-                © {new Date().getFullYear()} Christain Rex Omongos. Built with React & Material-UI.
+            <Typography variant="body2" sx={{ color: " rgba(255, 255, 255, 0.5) "}}>
+                © {new Date().getFullYear()} Christain Rex Omongos. All Rights Reserved.
             </Typography>
         </Box>
     )
