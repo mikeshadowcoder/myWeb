@@ -45,7 +45,7 @@ const Home = () => {
       <Box sx={{ textAlign: "left"}}>
         <Typography variant="h2">
           My name's {" "}
-          <Typography variant="h2" component="span" sx={{ color: "#2196F3", fontWeight: "bold" }}>Christian Rex Omongos</Typography>
+          <Typography variant="h2" component="span" className="gradient-text" sx={{ fontWeight: "bold" }}>Christian Rex Omongos</Typography>
         </Typography>
 
         <Typography variant="h6" sx={{ marginBottom: "10px", opacity: 0.8 }}>

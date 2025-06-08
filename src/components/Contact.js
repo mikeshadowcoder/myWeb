@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Box, Alert } from '@mui/material';
+import { Typography, TextField, Button, Box, Alert } from '@mui/material';
 import "../styles/boxStyling.css"
 
 const Contact = () => {
@@ -36,16 +36,15 @@ const Contact = () => {
 
 
   return (
-    <Box className="box-container"
+    <Box 
     sx={{ 
       p: 4,
       mt: 25,
       mb: 10
     }}
     >
-      <Container>
-        <Typography variant="h4" gutterBottom>Contact Me</Typography>
-
+      <Typography variant="h4" gutterBottom>Contact Me</Typography>
+      <Box className="box-container" >
         {/* Success Message */}
         {success && <Alert severity="success">Message sent</Alert>}
         {error && <Alert severity="error">Failed to send message. Please try again.</Alert>}
@@ -103,11 +102,9 @@ const Contact = () => {
               },
             }}
           />
-
-          <Button type="submit" variant="contained" sx={{ mt: 2 }}>Send Message</Button>
-          
+          <Button type="submit" variant="contained" sx={{ mt: 2 }}>Send Message</Button>      
         </form>
-      </Container>
+        </Box>
     </Box>
   );
 };
