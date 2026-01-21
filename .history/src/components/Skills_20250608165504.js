@@ -6,7 +6,7 @@ const Skills = () => {
   const skills = ['JavaScript', 'ReactJS', 'Node.js', 'HTML', 'CSS', 'MySQL'];
 
   return (
-    <Box className="box-container" sx={{ mt: 25, width: "100%", }}>
+    <Box sx={{ mt: 25, width: "100%", }}>
       <Typography variant="h4" gutterBottom >Tech Stack</Typography>
       <Box> {/* REDUNDANT might remove later*/} 
       <Grid2 container spacing={2} >

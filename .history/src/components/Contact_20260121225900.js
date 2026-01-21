@@ -36,7 +36,7 @@ const Contact = () => {
 
 
   return (
-    <Box className="box-container" sx={{p: 4, mt: 25, mb: 10}}>
+    <Box sx={{p: 4, mt: 25, mb: 10}}>
       <Typography variant="h4" gutterBottom>Contact Me</Typography>
       <Box className="box-container" >
         {/* Success Message */}

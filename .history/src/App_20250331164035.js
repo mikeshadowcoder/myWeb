@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Box from '@mui/material/Box';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import BackgroundShapes from './components/BackgroundShapes'
 
 
@@ -49,6 +50,7 @@ const App = () => {
         margin: "auto",
         // border: "2px solid red"
       }}>
+      <SpeedInsights/>
        {/* Sections with attached refs */}
       <section ref={homeRef}>
         <Home />

@@ -1,0 +1,45 @@
+body {
+    position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 20% 30%, #7c3aed66, transparent 55%),
+    radial-gradient(circle at 80% 70%, #22d3ee66, transparent 55%),
+    radial-gradient(circle at 50% 90%, #ec489966, transparent 60%);
+  
+  animation: blobDrift 45s ease-in-out infinite;
+  will-change: background-position;
+  /* animation: gradientShift 30s ease infinite; */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  @keyframes blobDrift {
+  0%   { background-position: 0% 0%, 100% 100%, 50% 100%; }
+  50%  { background-position: 20% 30%, 80% 60%, 50% 80%; }
+  100% { background-position: 0% 0%, 100% 100%, 50% 100%; }
+}
+
+  /* @keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+/* @media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+} */
+
+.gradient-text {
+  background: linear-gradient(90deg, rgb(50, 182, 230), rgb(138, 43, 226)); /* Customize here */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

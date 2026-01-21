@@ -14,6 +14,18 @@
   pointer-events: none;
 }
 
+.gradient-blobs {
+  position: relative;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 20% 30%, #7c3aed66, transparent 55%),
+    radial-gradient(circle at 80% 70%, #22d3ee66, transparent 55%),
+    radial-gradient(circle at 50% 90%, #ec489966, transparent 60%);
+
+}
 
   
   

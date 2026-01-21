@@ -1,7 +1,7 @@
 body {
     min-height: 100vh;
     background:
-      linear-gradient(120deg, #1b314b, #020617,  #0f172a, #312e81);
+      linear-gradient(120deg, #020617, #3a6aa4, #312e81, #0f172a);
     background-size: 100% 100%;
     color: white;
     margin: 0;

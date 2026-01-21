@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div>
       {/* Pass the scroll function to Header for navigation */}
-      <BackgroundShapes/>
+      {/* <BackgroundShapes/> */}
       <Header
         onScrollToSection={{
           home: () => scrollToSection(homeRef),

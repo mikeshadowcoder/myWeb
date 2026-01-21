@@ -21,9 +21,9 @@ const Content = () => {
   return (
   <Box>
     {/* <MacWindowHeader/> */}
-    <Box className='box-container' sx={{ padding: "20px"}}>
+    <Box sx={{ padding: "20px"}}>
       
-        <Typography variant="h4" gutterBottom>Projects</Typography>
+        <Typography className='box-container' variant="h4" gutterBottom>Projects</Typography>
         <Grid2 container spacing={3}>
           {projects.map((project, index) => (
             <Grid2 item xs={12} sm={6} key={index}>
