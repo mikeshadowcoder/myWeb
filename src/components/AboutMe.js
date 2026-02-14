@@ -9,9 +9,10 @@ const AboutMe = () => {
       <Box className="box-container">
         <Typography variant="h4" gutterBottom>About Me</Typography>
           <Typography>
-            I'm a web developer with verious experience in front-end and back-end development.
-            My goal is to build impactful web applications and provide solutions that
-            help businesses grow.
+            A front-end web developer with a passion for creating visually appealing and user-friendly websites. 
+            With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and interactive web applications. 
+            I am dedicated to continuous learning and staying up-to-date with the latest web development trends and technologies. 
+            My goal is to create seamless digital experiences that engage users and drive results.
           </Typography>
       </Box>
     </Box>
